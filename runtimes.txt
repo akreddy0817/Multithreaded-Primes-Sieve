@@ -1,0 +1,16 @@
+Akhilesh Reddy
+I pledge my honor that I have abided by the Stevens Honor System.
+
+./mtsieve -s100 -e200000000 -t1 : 0m2.792s
+./mtsieve -s100 -e200000000 -t2 : 0m2.270s
+./mtsieve -s100 -e200000000 -t3 : 0m1.852s
+./mtsieve -s100 -e200000000 -t4 : 0m1.701s
+./mtsieve -s100 -e200000000 -t5 : 0m1.725s
+./mtsieve -s100 -e200000000 -t6 : 0m1.660s
+./mtsieve -s100 -e200000000 -t7 : 0m1.699s
+./mtsieve -s100 -e200000000 -t8 : 0m1.654s
+
+My CPU is "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz" running on a Dell XPS. 
+The time does not scale linearly with the number of threads. While the time decreases after the addition of each thread, the change in time decreases.
+In this example, the change goes from .5 to .4 to .15 seconds and can even become negative, which means the addition of the new thread is making it slower. 
+I would expect that if I were to keep increasing the number of threads, the time would plateau as it did in this example.
